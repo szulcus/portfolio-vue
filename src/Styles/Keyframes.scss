@@ -1,0 +1,91 @@
+@import '@/Styles/Variables.scss';
+
+@keyframes bounce {
+	0% {
+		opacity: 0;
+		transform: scale(0.8)
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.1)
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes scrollDown {
+	0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	// 50%{
+	// 	opacity: 1;
+	// }
+	90% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}
+
+// Front page
+@keyframes loadingDott {
+	0% {
+		background-color: transparent;
+		transform: scale(1);
+	}
+	30% {
+		background-color: $decorative;
+		transform: scale(1.2);
+	}
+	70% {
+		background-color: $decorative;
+		transform: scale(1.2);
+	}
+	100% {
+		background-color: transparent;
+		transform: scale(1);
+	}
+}
+@keyframes avatar {
+	0% {
+		opacity: 0;
+		transform: scale(0.7);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes sLetter {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes letter {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

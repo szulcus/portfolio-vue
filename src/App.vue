@@ -1,32 +1,51 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div>
+		<div class="home">
+			<FrontPage />
+			<Greetings />
+			<Frontend />
+			<Backend />
+			<Realizations />
+		</div>
+		<Footer />
+	</div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<script>
+	import FrontPage from '@/Components/FrontPage'
+	import Greetings from '@/Components/Greetings'
+	import Frontend from '@/Components/Frontend'
+	import Backend from '@/Components/Backend'
+	import Realizations from '@/Components/Realizations'
+	import Footer from '@/Components/Footer'
+	export default {
+		name: 'Home',
+		components: {
+			FrontPage,
+			Greetings,
+			Frontend,
+			Backend,
+			Realizations,
+			Footer
+		},
+		data() {
+			return {
+			}
+		},
+		mounted() {
+			
+		},
+	}
+</script>
+<style lang="scss" scoped>
+	.home {
+		width: 100%;
+		height: 100%;
+		background-position: center top;
+		background-size: cover;
+		padding: 0 20px;
+		@media (min-width: 600px) {
+			padding: 0 80px;
+		}
+	}
 </style>
