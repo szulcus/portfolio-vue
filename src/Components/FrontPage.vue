@@ -6,9 +6,9 @@
 			<div class="loading__dott"></div>
 		</div>
 		<fragment v-else>
-			<img class="avatar" width="100px" height="100px" :src="avatar" alt="avatar">
+			<img class="avatar" :src="avatar" alt="avatar" width="250" height="250">
 			<div class="logotype">
-				<img class="s-letter" :src="letter" alt="s-letter">
+				<img class="s-letter" :src="letter" alt="s-letter" width="140" height="110">
 				<div class="letters">
 					<span class="letter">z</span>
 					<span class="letter">u</span>
@@ -41,7 +41,6 @@
 					loadImages++
 					if (loadImages === images.length) {
 						this.isLoading = false
-						console.log('Done!')
 					}
 				}
 			})
@@ -90,13 +89,14 @@
 			width: 250px;
 			height: 250px;
 			border-radius: 100px;
-			/* opacity: 0; */
-			/* animation: avatar 1s both; */
+			opacity: 0;
+			animation: avatar 1s both;
 		}
 		.logotype {
 			position: relative;
 			width: 260px;
 			.s-letter {
+				width: 140px;
 				height: 110px;
 				opacity: 0;
 				animation: sLetter 0.5s 0.5s both;

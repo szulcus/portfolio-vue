@@ -31,12 +31,7 @@
 
 <script>
 	export default {
-		name: "Footer",
-		data() {
-			return {
-				
-			}
-		}
+		name: "Footer"
 	}
 </script>
 
@@ -47,6 +42,7 @@
 		justify-content: center;
 		background-color: $bg-dark;
 		padding: 10px;
+		margin-top: 50px;
 		align-items: center;
 		font-weight: bold;
 		text-align: center;
@@ -56,9 +52,16 @@
 			display: flex;
 			align-items: center;
 			margin: 10px 0;
+			flex-direction: column;
+			@media (min-width: 600px) {
+				flex-direction: row;
+			}
 			.contact-items {
 				width: 250px;
-				text-align-last: right;
+				margin-bottom: 15px;
+				@media (min-width: 600px) {
+					text-align: right;
+				}
 				.contact__item {
 					margin: 10px;
 					@include hover {
@@ -74,14 +77,21 @@
 				}
 			}
 			.contact-separator {
+				display: none;
 				margin: 0 10px;
 				height: 30px;
 				border: none;
 				border-right: 3px solid $decorative;
+				@media (min-width: 600px) {
+					display: block;
+				}
 			}
 			.phone-number {
 				width: 250px;
-				text-align: left;
+				margin-bottom: 15px;
+				@media (min-width: 600px) {
+					text-align: left;
+				}
 				.contact__item {
 					margin: 10px;
 					font-size: 20px;

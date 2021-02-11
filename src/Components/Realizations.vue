@@ -11,20 +11,41 @@
 <script>
 	import RealizationsGallery from '@/Components/RealizationsGallery'
 	// Realizations
-	import cichy_dworek_signet from '@/Assets/realizations/cichy-dworek/signet.png'
-	import cichy_dworek_logotype from '@/Assets/realizations/cichy-dworek/logotype.png'
-	import easy_word_signet from '@/Assets/realizations/easy-word/signet.png'
-	import easy_word_logotype from '@/Assets/realizations/easy-word/logotype.png'
-	import my_notes_signet from '@/Assets/realizations/my-notes/signet.png'
-	import my_notes_logotype from '@/Assets/realizations/my-notes/logotype.png'
-	import na_j_signet from '@/Assets/realizations/na-j/signet.png'
-	import na_j_logotype from '@/Assets/realizations/na-j/logotype.png'
-	import s_community_signet from '@/Assets/realizations/s-community/signet.png'
-	import s_community_logotype from '@/Assets/realizations/s-community/logotype.png'
-	import tofu_signet from '@/Assets/realizations/tofu/signet.png'
-	import tofu_logotype from '@/Assets/realizations/tofu/logotype.png'
-	import root_calculate_signet from '@/Assets/realizations/root-calculate/signet.png'
-	import root_calculate_logotype from '@/Assets/realizations/root-calculate/logotype.png'
+	import cichy_dworek_signet_png from '@/Assets/realizations/cichy-dworek/signet.png'
+	import cichy_dworek_logotype_png from '@/Assets/realizations/cichy-dworek/logotype.png'
+	import cichy_dworek_signet_webp from '@/Assets/realizations/cichy-dworek/signet.webp'
+	import cichy_dworek_logotype_webp from '@/Assets/realizations/cichy-dworek/logotype.webp'
+
+	import easy_word_signet_png from '@/Assets/realizations/easy-word/signet.png'
+	import easy_word_logotype_png from '@/Assets/realizations/easy-word/logotype.png'
+	import easy_word_signet_webp from '@/Assets/realizations/easy-word/signet.webp'
+	import easy_word_logotype_webp from '@/Assets/realizations/easy-word/logotype.webp'
+
+	import my_notes_signet_png from '@/Assets/realizations/my-notes/signet.png'
+	import my_notes_logotype_png from '@/Assets/realizations/my-notes/logotype.png'
+	import my_notes_signet_webp from '@/Assets/realizations/my-notes/signet.webp'
+	import my_notes_logotype_webp from '@/Assets/realizations/my-notes/logotype.webp'
+
+	import na_j_signet_png from '@/Assets/realizations/na-j/signet.png'
+	import na_j_logotype_png from '@/Assets/realizations/na-j/logotype.png'
+	import na_j_signet_webp from '@/Assets/realizations/na-j/signet.webp'
+	import na_j_logotype_webp from '@/Assets/realizations/na-j/logotype.webp'
+
+	import s_community_signet_png from '@/Assets/realizations/s-community/signet.png'
+	import s_community_logotype_png from '@/Assets/realizations/s-community/logotype.png'
+	import s_community_signet_webp from '@/Assets/realizations/s-community/signet.webp'
+	import s_community_logotype_webp from '@/Assets/realizations/s-community/logotype.webp'
+
+	import tofu_signet_png from '@/Assets/realizations/tofu/signet.png'
+	import tofu_logotype_png from '@/Assets/realizations/tofu/logotype.png'
+	import tofu_signet_webp from '@/Assets/realizations/tofu/signet.webp'
+	import tofu_logotype_webp from '@/Assets/realizations/tofu/logotype.webp'
+
+	import root_calculate_signet_png from '@/Assets/realizations/root-calculate/signet.png'
+	import root_calculate_logotype_png from '@/Assets/realizations/root-calculate/logotype.png'
+	import root_calculate_signet_webp from '@/Assets/realizations/root-calculate/signet.webp'
+	import root_calculate_logotype_webp from '@/Assets/realizations/root-calculate/logotype.webp'
+
 	// Technologies
 	import vue from '@/Assets/experience/js/vue.svg'
 	import react from '@/Assets/experience/js/react.svg'
@@ -44,8 +65,14 @@
 			return {
 				experience: [
 					{
-						signet: tofu_signet,
-						logotype: tofu_logotype,
+						signet: {
+							png: tofu_signet_png,
+							webp: tofu_signet_webp
+						},
+						logotype: {
+							png: tofu_logotype_png,
+							webp: tofu_logotype_webp
+						},
 						url: "https://szulcus.pl",
 						git: "https://github.com/jakub104/tofu",
 						technologies: [
@@ -70,8 +97,14 @@
 						`
 					},
 					{
-						signet: my_notes_signet,
-						logotype: my_notes_logotype,
+						signet: {
+							png: my_notes_signet_png,
+							webp: my_notes_signet_webp
+						},
+						logotype: {
+							png: my_notes_logotype_png,
+							webp: my_notes_logotype_webp
+						},
 						title: "MyNotes",
 						url: "https://mynotes-szulcus.netlify.app/#/pl",
 						git: "https://github.com/jakub104/my-notes",
@@ -97,8 +130,14 @@
 						`
 					},
 					{
-						signet: easy_word_signet,
-						logotype: easy_word_logotype,
+						signet: {
+							png: easy_word_signet_png,
+							webp: easy_word_signet_webp
+						},
+						logotype: {
+							png: easy_word_logotype_png,
+							webp: easy_word_logotype_webp
+						},
 						title: "EasyWord",
 						url: "https://szulcus.pl",
 						git: "https://easyword123.pl",
@@ -124,8 +163,14 @@
 						`
 					},
 					{
-						signet: na_j_signet,
-						logotype: na_j_logotype,
+						signet: {
+							png: na_j_signet_png,
+							webp: na_j_signet_webp
+						},
+						logotype: {
+							png: na_j_logotype_png,
+							webp: na_j_logotype_webp
+						},
 						title: "Na-J",
 						url: "https://na-j.pl",
 						git: "https://github.com/jakub104/naj",
@@ -151,8 +196,14 @@
 						`
 					},
 					{
-						signet: cichy_dworek_signet,
-						logotype: cichy_dworek_logotype,
+						signet: {
+							png: cichy_dworek_signet_png,
+							webp: cichy_dworek_signet_webp
+						},
+						logotype: {
+							png: cichy_dworek_logotype_png,
+							webp: cichy_dworek_logotype_webp
+						},
 						url: "https://cichy-dworek.pl",
 						git: "https://szulcus.pl",
 						technologies: [
@@ -177,8 +228,14 @@
 						`
 					},
 					{
-						signet: s_community_signet,
-						logotype: s_community_logotype,
+						signet: {
+							png: s_community_signet_png,
+							webp: s_community_signet_webp
+						},
+						logotype: {
+							png: s_community_logotype_png,
+							webp: s_community_logotype_webp
+						},
 						url: "https://scommunity.eu",
 						git: "https://github.com/jakub104/scommunity",
 						technologies: [
@@ -208,8 +265,14 @@
 						`
 					},
 					{
-						signet: root_calculate_signet,
-						logotype: root_calculate_logotype,
+						signet: {
+							png: root_calculate_signet_png,
+							webp: root_calculate_signet_webp
+						},
+						logotype: {
+							png: root_calculate_logotype_png,
+							webp: root_calculate_logotype_webp
+						},
 						url: "https://www.npmjs.com/package/root-calculate",
 						git: "https://github.com/jakub104/root-calculate",
 						technologies: [

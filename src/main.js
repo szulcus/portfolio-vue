@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueAnalytics from 'vue-analytics'
+// import VueAnalytics from 'vue-analytics'
 import App from '@/App.vue'
 import '@/registerServiceWorker'
 // STYLES
@@ -7,17 +7,14 @@ import '@/Styles/Global.scss'
 // CONFIG
 import '@/Config/FaIcons'
 import '@/Config/Fragment'
+import './registerServiceWorker'
 
 const vh = window.innerHeight;
 document.documentElement.style.setProperty('--window-height', `${vh}px`);
-window.addEventListener('resize', () => {
-	const vh = window.innerHeight;
-	document.documentElement.style.setProperty('--window-height', `${vh}px`);
-});
 
-Vue.use(VueAnalytics, {
-	id: 'G-H5XJGJB4P9'
-})
+// Vue.use(VueAnalytics, {
+// 	id: 'G-H5XJGJB4P9'
+// })
 
 
 Vue.directive('bg', function (el, binding) {

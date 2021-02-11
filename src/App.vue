@@ -27,14 +27,7 @@
 			Backend,
 			Realizations,
 			Footer
-		},
-		data() {
-			return {
-			}
-		},
-		mounted() {
-			
-		},
+		}
 	}
 </script>
 <style lang="scss" scoped>

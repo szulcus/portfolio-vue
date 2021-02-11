@@ -9,7 +9,7 @@
 		<div class="gallery-wrapper">
 			<div :class="['exp', {'exp--hide': exchange}]">
 				<h2 v-html="experience[activeItems][0].title" class="exp__title" />
-				<img class="exp__img" :src="experience[activeItems][0].img" :alt="experience[activeItems][0].title">
+				<img class="exp__img" :src="experience[activeItems][0].img" :alt="experience[activeItems][0].title" width="200" height="100">
 				<div class="exp__nav">
 					<div v-for="(item, index) in experience[activeItems].slice(1)" :key="index">
 						<img
@@ -17,6 +17,8 @@
 							:src="item.img"
 							:alt="item.title"
 							@click="setIndex(index)"
+							width="40"
+							height="40"
 						/>
 					</div>
 				</div>
@@ -33,6 +35,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="carousel">
+			<div :class="['carousel__indicator', {'carousel__indicator--active': activeItems === index }]" v-for="(items, index) in experience" :key="index" @click="setItems(index)" />
 		</div>
 	</div>
 </template>
@@ -66,12 +71,9 @@
 					loadImages++
 					if (loadImages === images.length) {
 						this.isLoading = false
-						console.log('Done!')
 					}
 				}
 			})
-			console.log(loadImages)
-			console.log(images)
 		},
 		methods: {
 			itemsUp() {
@@ -99,6 +101,14 @@
 			},
 			setIndex(index) {
 				this.activeIndex = index
+			},
+			setItems(index) {
+				this.exchange = true
+				setTimeout(() => {
+					this.activeIndex = 0
+					this.activeItems = index
+					this.exchange = false
+				}, 200)
 			}
 		}
 	}
@@ -161,7 +171,7 @@
 			}
 			.exp__img {
 				display: block;
-				width: 100%;
+				width: 200px;
 				height: 100px;
 				margin: 10px;
 				object-fit: contain;
@@ -220,6 +230,31 @@
 		}
 		.exp--hide {
 			opacity: 0;
+		}
+	}
+	.carousel {
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		.carousel__indicator {
+			width: 16px;
+			height: 16px;
+			margin: 5px;
+			border-radius: 50%;
+			border: 3px solid $decorative;
+			transition: 0.2s ease;
+			&:active {
+				transform: scale(0.8);
+			}
+			@include hover {
+				background-color: $decorative;
+			}
+		}
+		.carousel__indicator--active {
+			background-color: $decorative;
+			transform: scale(1.2);
 		}
 	}
 }

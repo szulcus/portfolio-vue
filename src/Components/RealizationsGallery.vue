@@ -9,8 +9,16 @@
 		<div class="gallery-wrapper">
 			<div :class="['exp', {'exp--hide': exchange}]">
 				<a :href="experience[activeIndex].url" class="realization__logo" v-rel>
-					<img class="logo__signet" :src="experience[activeIndex].signet" alt="signet">
-					<img class="logo__logotype" :src="experience[activeIndex].logotype" alt="logotype" />
+					<picture>
+						<source type="image/webp" :srcset="experience[activeIndex].signet.webp">
+						<source type="image/png" :srcset="experience[activeIndex].signet.png">
+						<img class="logo__signet" :src="experience[activeIndex].signet.png" alt="signet" width="130" height="130">
+					</picture>
+					<picture>
+						<source type="image/webp" :srcset="experience[activeIndex].logotype.webp" />
+						<source type="image/png" :srcset="experience[activeIndex].logotype.png" />
+						<img class="logo__logotype" :src="experience[activeIndex].logotype.png" alt="logotype" width="250" height="50" />
+					</picture>
 				</a>
 				<div class="exp__nav">
 					<div v-for="(technology, index) in experience[activeIndex].technologies" :key="index">
@@ -19,6 +27,8 @@
 								:src="technology.img"
 								:alt="technology.name"
 								:title="technology.name"
+								width="40"
+								height="40"
 							/>
 						</a>
 					</div>
@@ -33,6 +43,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="carousel">
+			<div :class="['carousel__indicator', {'carousel__indicator--active': activeIndex === index }]" v-for="(items, index) in experience" :key="index" @click="setIndex(index)" />
 		</div>
 	</div>
 </template>
@@ -71,7 +84,6 @@
 					loadImages++
 					if (loadImages === images.length) {
 						this.isLoading = false
-						console.log('Done!')
 					}
 				}
 			})
@@ -91,8 +103,14 @@
 					this.exchange = false
 				}, 200)
 			},
+			setIndex(index) {
+				this.exchange = true
+				setTimeout(() => {
+					this.activeIndex = index
+					this.exchange = false
+				}, 200)
+			},
 			goTo(url) {
-				// console.log(window, url)
 				window.open(url, '_blank')
 			}
 		}
@@ -154,24 +172,25 @@
 					display: flex;
 					align-items: center;
 					flex-direction: column;
-					.logo__signet {
-						transition: 0.3s ease;
-						border-radius: 40px;
-					}
 					@include hover {
 						.logo__signet {
 							box-shadow: 0 0 30px rgb($secondary, 0.5);
 						}
 					}
 					.logo__signet {
-						display: block;
+						transition: 0.3s ease;
+						border-radius: 40px;
 						height: 130px;
+						width: 130px;
 						margin: 10px;
+						
 					}
 					.logo__logotype {
 						display: block;
+						width: 100%;
 						height: 50px;
 						margin: 10px;
+						object-fit: contain;
 					}
 				}
 				.exp__nav {
@@ -187,9 +206,6 @@
 						transition: 0.2s ease;
 						@include hover {
 							transform: scale(1.2);
-						}
-						img {
-							height: 100%;
 						}
 					}
 				}
@@ -232,6 +248,31 @@
 			}
 			.exp--hide {
 				opacity: 0;
+			}
+		}
+		.carousel {
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			.carousel__indicator {
+				width: 16px;
+				height: 16px;
+				margin: 5px;
+				border-radius: 50%;
+				border: 3px solid $decorative;
+				transition: 0.2s ease;
+				&:active {
+					transform: scale(0.8);
+				}
+				@include hover {
+					background-color: $decorative;
+				}
+			}
+			.carousel__indicator--active {
+				background-color: $decorative;
+				transform: scale(1.2);
 			}
 		}
 	}
