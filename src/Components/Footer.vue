@@ -6,7 +6,7 @@
 					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'facebook-messenger' }" />
 				</a>
 				<a class="contact__item" href="https://www.linkedin.com/in/szulcus/" aria-label="LinkedIn" v-rel>
-					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'lindedin' }" />
+					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'linkedin' }" />
 				</a>
 				<a class="contact__item" href="https://github.com/jakub104" aria-label="GitHub" v-rel>
 					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'github' }" />
