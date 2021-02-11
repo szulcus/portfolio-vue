@@ -6,10 +6,10 @@
 					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'facebook-messenger' }" />
 				</a>
 				<a class="contact__item" href="https://www.linkedin.com/in/szulcus/" aria-label="LinkedIn" v-rel>
-					<fa-icon class="item__icon" icon="user-tie" />
+					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'lindedin' }" />
 				</a>
 				<a class="contact__item" href="https://github.com/jakub104" aria-label="GitHub" v-rel>
-					<fa-icon class="item__icon" icon="code-branch" />
+					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'github' }" />
 				</a>
 				<a class="contact__item" href="https://www.npmjs.com/~szulcus" aria-label="NPM" v-rel>
 					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'npm' }" />

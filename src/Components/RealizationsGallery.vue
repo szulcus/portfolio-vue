@@ -187,10 +187,9 @@
 					}
 					.logo__logotype {
 						display: block;
-						width: 100%;
+						width: 250px;
 						height: 50px;
 						margin: 10px;
-						object-fit: contain;
 					}
 				}
 				.exp__nav {
