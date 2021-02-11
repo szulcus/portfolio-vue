@@ -6,9 +6,13 @@
 			<div class="loading__dott"></div>
 		</div>
 		<fragment v-else>
-			<img class="avatar" :src="avatar" alt="avatar" width="250" height="250">
+			<picture>
+				<source type="image/webp" :srcset="avatar_webp" />
+				<source type="image/png" :srcset="avatar_png" />
+				<img class="avatar" :src="avatar_webp" alt="avatar" width="250" height="250" />
+			</picture>
 			<div class="logotype">
-				<img class="s-letter" :src="letter" alt="s-letter" width="140" height="110">
+				<img class="s-letter" :src="letter" alt="s-letter" width="140" height="110" />
 				<div class="letters">
 					<span class="letter">z</span>
 					<span class="letter">u</span>
@@ -24,14 +28,15 @@
 </template>
 
 <script>
-	import avatar from '@/Assets/avatar.jpg'
+	import avatar_png from '@/Assets/avatar/avatar.jpg'
+	import avatar_webp from '@/Assets/avatar/avatar.webp'
 	import letter from '@/Assets/s-letter.svg'
 	import overlay from '@/Assets/overlay.svg'
 	export default {
 		name: "FrontPage",
 		created() {
 			// Get images
-			const images = [avatar, letter, overlay]
+			const images = [avatar_png, avatar_webp , letter, overlay]
 			// Load images
 			let loadImages = 0
 			images.forEach(url => {
@@ -47,7 +52,8 @@
 		},
 		data() {
 			return {
-				avatar,
+				avatar_png,
+				avatar_webp,
 				letter,
 				overlay,
 				isLoading: true
