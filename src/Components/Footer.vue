@@ -23,15 +23,30 @@
 				</a>
 			</div>
 		</div>
+		<div :class="['info-wrapper', {'info-wrapper--active': infoActive}]">
+			Icons made by
+			<a class="flaticon-link" href="https://www.freepik.com" title="Freepik" v-rel>Freepik</a>,
+			<a class="flaticon-link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" v-rel>Pixel perfect</a> and
+			<a class="flaticon-link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs" v-rel>DinosoftLabs</a> from
+			<a class="flaticon-link" href="https://www.flaticon.com/" title="Flaticon" v-rel>www.flaticon.com</a>
+		</div>
 		<div class="copyright">
 			<span class="wrapper__letter">S</span>zulcuś 2020 &copy;
+			<div :class="['info-icon', {'info-icon--active': infoActive}]" @click="infoActive = !infoActive">
+				<fa-icon icon="info-circle" />
+			</div>
 		</div>
 	</footer>
 </template>
 
 <script>
 	export default {
-		name: "Footer"
+		name: "Footer",
+		data() {
+			return {
+				infoActive: false
+			}
+		}
 	}
 </script>
 
@@ -44,7 +59,6 @@
 		padding: 10px;
 		margin-top: 50px;
 		align-items: center;
-		font-weight: bold;
 		text-align: center;
 		font-size: 16px;
 		border-top: 3px solid $decorative;
@@ -58,7 +72,7 @@
 			}
 			.contact-items {
 				width: 250px;
-				margin-bottom: 15px;
+				margin: 5px 0;
 				@media (min-width: 600px) {
 					text-align: right;
 				}
@@ -88,7 +102,8 @@
 			}
 			.phone-number {
 				width: 250px;
-				margin-bottom: 15px;
+				margin: 5px 0;
+				font-weight: bold;
 				@media (min-width: 600px) {
 					text-align: left;
 				}
@@ -98,7 +113,6 @@
 					transition: 0.2s ease;
 					@include hover {
 						letter-spacing: 1px;
-						/* transform: scale(1.1); */
 						.item__icon {
 							color: $decorative;
 							transform: scale(1.2) rotate(-5deg);
@@ -112,10 +126,44 @@
 				}
 			}
 		}
+		.info-wrapper {
+			display: none;
+			/* width: 100%; */
+			padding: 10px 0;
+			font-size: 16px;
+			animation: opacity 0.5s ease;
+			.flaticon-link {
+				color: $decorative;
+				transition: 0.2s ease;
+				@include hover {
+					opacity: 0.7;
+				}
+			}
+		}
+		.info-wrapper--active {
+			display: block;
+		}
 		.copyright {
 			font-size: 16px;
+			margin-top: 10px;
+			font-weight: bold;
 			.wrapper__letter {
 				color: $decorative;
+			}
+			.info-icon {
+				display: inline-block;
+				padding: 0 10px;
+				transition: 0.2s ease;
+				@include hover {
+					opacity: 0.7;
+				}
+			}
+			.info-icon--active {
+				transform: scale(1.2);
+				color: $decorative;
+				@include hover {
+					opacity: 1;
+				}
 			}
 		}
 	}

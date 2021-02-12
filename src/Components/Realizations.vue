@@ -46,14 +46,14 @@
 	import root_calculate_logotype_webp from '@/Assets/realizations/root-calculate/logotype.webp'
 
 	// Technologies
-	import vue from '@/Assets/experience/js/vue.svg'
-	import react from '@/Assets/experience/js/react.svg'
-	import sass from '@/Assets/experience/css/sass.svg'
-	import sc from '@/Assets/experience/css/sc.svg'
-	import firebase from '@/Assets/experience/firebase/firebase.svg'
-	import nodejs from '@/Assets/experience/nodejs/nodejs.svg'
-	import mongodb from '@/Assets/experience/nodejs/mongodb.svg'
-	import npm from '@/Assets/experience/nodejs/npm.svg'
+	import vue from '@/Assets/experience/frontend/js/vue.svg'
+	import react from '@/Assets/experience/frontend/js/react.svg'
+	import sass from '@/Assets/experience/frontend/css/sass.svg'
+	import sc from '@/Assets/experience/frontend/css/sc.svg'
+	import firebase from '@/Assets/experience/backend/firebase/firebase.svg'
+	import nodejs from '@/Assets/experience/backend/nodejs/nodejs.svg'
+	import mongodb from '@/Assets/experience/backend/nodejs/mongodb.svg'
+	import npm from '@/Assets/experience/backend/nodejs/npm.svg'
 
 	export default {
 		name: "Projects",
@@ -72,7 +72,7 @@
 							png: tofu_logotype_png,
 							webp: tofu_logotype_webp
 						},
-						url: "https://szulcus.pl",
+						url: "https://jakub104.github.io/tofu",
 						git: "https://github.com/jakub104/tofu",
 						technologies: [
 							{
@@ -92,73 +92,10 @@
 							},
 						],
 						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
-						`
-					},
-					{
-						signet: {
-							png: my_notes_signet_png,
-							webp: my_notes_signet_webp
-						},
-						logotype: {
-							png: my_notes_logotype_png,
-							webp: my_notes_logotype_webp
-						},
-						title: "MyNotes",
-						url: "https://mynotes-szulcus.netlify.app/#/pl",
-						git: "https://github.com/jakub104/my-notes",
-						technologies: [
-							{
-								img: vue,
-								url: 'https://vuejs.org',
-								name: "Vue"
-							},
-							{
-								img: sass,
-								url: 'https://sass-lang.com',
-								name: "SCSS"
-							},
-							{
-								img: firebase,
-								url: 'https://firebase.google.com',
-								name: "Firebase"
-							}
-						],
-						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
-						`
-					},
-					{
-						signet: {
-							png: easy_word_signet_png,
-							webp: easy_word_signet_webp
-						},
-						logotype: {
-							png: easy_word_logotype_png,
-							webp: easy_word_logotype_webp
-						},
-						title: "EasyWord",
-						url: "https://szulcus.pl",
-						git: "https://easyword123.pl",
-						technologies: [
-							{
-								img: react,
-								url: 'https://pl.reactjs.org',
-								name: "React"
-							},
-							{
-								img: sc,
-								url: 'https://styled-components.com',
-								name: "Styled Components"
-							},
-							{
-								img: firebase,
-								url: 'https://firebase.google.com',
-								name: "Firebase"
-							}
-						],
-						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+							Aplikacja ToFu (True or False, uh?) służy głównie do zabawy ze znajomymi.
+							Użytkownicy mogą odpowiadać na quizy innych, lub tworzyć własne i rywalizować w rankingu.
+							Aby rozwiązać quiz zależy odpowiedzieć (twierdząco lub przecząco) na pytania.
+							Na koniec pojawia się tabela z wynikami i procenten dobrych odpowiedzi.
 						`
 					},
 					{
@@ -191,7 +128,45 @@
 							}
 						],
 						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+							Nowoczesna strona internetowa dla firmy budowlanej Na-J.
+							Zawiera galerię z podglądem i opisem wybranych projektów.
+							W zakładce "Kontakt" widnieje mapka z siedzibą firmy, adres i formularz kontaktowy.
+						`
+					},
+					{
+						signet: {
+							png: easy_word_signet_png,
+							webp: easy_word_signet_webp
+						},
+						logotype: {
+							png: easy_word_logotype_png,
+							webp: easy_word_logotype_webp
+						},
+						title: "EasyWord",
+						url: "https://szulcus.pl",
+						git: "https://easyword123.pl",
+						technologies: [
+							{
+								img: react,
+								url: 'https://pl.reactjs.org',
+								name: "React"
+							},
+							{
+								img: sc,
+								url: 'https://styled-components.com',
+								name: "Styled Components"
+							},
+							{
+								img: firebase,
+								url: 'https://firebase.google.com',
+								name: "Firebase"
+							}
+						],
+						content: `
+							Platforma do nauki słówek EasyWord umożliwia korzystanie bez konta, jednak nie zapisujemy w tym trybie swoich postępów.
+							Po rejestracji mamy dostęp swojego profilu, gdzie możemy edytować zdjęcie, nick oraz biogram.
+							Możliwa jest rywalizacja z innymi użytkownikami na czacie, oraz pisanie z nimi na czacie.
+							Aplikacja zawiera wiele mini gier i innych funkcjonalności, dzięki czemu nauka słówek jest dużo ciekawcza.
 						`
 					},
 					{
@@ -223,7 +198,75 @@
 							}
 						],
 						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+							Strona internetowa domu opieki Cichy Dworek.
+							Posiada galerię w formie wirtualnego spaceru po budynku.
+							W zakładce "Kontakt" znajdziemy mapkę, adres, linki do social mediów, oraz formularz kontaktowy.
+						`
+					},
+					{
+						signet: {
+							png: my_notes_signet_png,
+							webp: my_notes_signet_webp
+						},
+						logotype: {
+							png: my_notes_logotype_png,
+							webp: my_notes_logotype_webp
+						},
+						title: "MyNotes",
+						url: "https://mynotes-szulcus.netlify.app/#/pl",
+						git: "https://github.com/jakub104/my-notes",
+						technologies: [
+							{
+								img: vue,
+								url: 'https://vuejs.org',
+								name: "Vue"
+							},
+							{
+								img: sass,
+								url: 'https://sass-lang.com',
+								name: "SCSS"
+							},
+							{
+								img: firebase,
+								url: 'https://firebase.google.com',
+								name: "Firebase"
+							}
+						],
+						content: `
+							Aplikacja do tworzenia notatek.
+							Aby zapisać swoje notatki, należy zalogować sie do aplikacji.
+							Możliwe jest tworzenie notatek w formie tekstu (edycja nagłówka i treści) lub listy (edycja nagłówka, oraz edycja, dodawanie i usuwanie elementów).
+							Notatki możemy trzymać w trzech folderach (głównym, archiwum i usuniętych).
+							Aplikacja działa w 8 językach.
+						`
+					},
+					{
+						signet: {
+							png: root_calculate_signet_png,
+							webp: root_calculate_signet_webp
+						},
+						logotype: {
+							png: root_calculate_logotype_png,
+							webp: root_calculate_logotype_webp
+						},
+						url: "https://www.npmjs.com/package/root-calculate",
+						git: "https://github.com/jakub104/root-calculate",
+						technologies: [
+							{
+								img: nodejs,
+								url: 'https://nodejs.org/en',
+								name: "Node.js"
+							},
+							{
+								img: npm,
+								url: 'https://www.mongodb.com',
+								name: "NPM"
+							},
+						],
+						content: `
+							RootCalculate jest paczką na npm, która służy do liczenia pierwiastków.
+							Umożliwia również rozkład liczb na czynniki pierwsze.
+							Dokumentacja została utworzona w języku Markdown.
 						`
 					},
 					{
@@ -260,34 +303,8 @@
 							}
 						],
 						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
-						`
-					},
-					{
-						signet: {
-							png: root_calculate_signet_png,
-							webp: root_calculate_signet_webp
-						},
-						logotype: {
-							png: root_calculate_logotype_png,
-							webp: root_calculate_logotype_webp
-						},
-						url: "https://www.npmjs.com/package/root-calculate",
-						git: "https://github.com/jakub104/root-calculate",
-						technologies: [
-							{
-								img: nodejs,
-								url: 'https://nodejs.org/en',
-								name: "Node.js"
-							},
-							{
-								img: npm,
-								url: 'https://www.mongodb.com',
-								name: "NPM"
-							},
-						],
-						content: `
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+							Scommunity jest projektem nad którym wciąż pracuję.
+							W zamyśle ma być uproszczona wercją Facebooka
 						`
 					}
 				]

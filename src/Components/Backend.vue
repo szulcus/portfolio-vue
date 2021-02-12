@@ -11,21 +11,21 @@
 <script>
 	import Gallery from '@/Components/Gallery'
 	// FIREBASE
-	import firebase from '@/Assets/experience/firebase/firebase.svg'
-	import au from '@/Assets/experience/firebase/au.svg'
-	import cf from '@/Assets/experience/firebase/cf.svg'
-	import db from '@/Assets/experience/firebase/db.svg'
-	import fh from '@/Assets/experience/firebase/fh.svg'
-	import st from '@/Assets/experience/firebase/st.svg'
-	import ga from '@/Assets/experience/firebase/ga.svg'
+	import firebase from '@/Assets/experience/backend/firebase/firebase.svg'
+	import au from '@/Assets/experience/backend/firebase/au.svg'
+	import cf from '@/Assets/experience/backend/firebase/cf.svg'
+	import db from '@/Assets/experience/backend/firebase/db.svg'
+	import fh from '@/Assets/experience/backend/firebase/fh.svg'
+	import st from '@/Assets/experience/backend/firebase/st.svg'
+	import ga from '@/Assets/experience/backend/firebase/ga.svg'
 	// NODEJS
-	import nodejs from '@/Assets/experience/nodejs/nodejs.svg'
-	import express from '@/Assets/experience/nodejs/express.svg'
-	import mongodb from '@/Assets/experience/nodejs/mongodb.svg'
-	import npm from '@/Assets/experience/nodejs/npm.svg'
+	import nodejs from '@/Assets/experience/backend/nodejs/nodejs.svg'
+	import express from '@/Assets/experience/backend/nodejs/express.svg'
+	import mongodb from '@/Assets/experience/backend/nodejs/mongodb.svg'
+	import npm from '@/Assets/experience/backend/nodejs/npm.svg'
 	// PYTHON
-	import python from '@/Assets/experience/python/python.svg'
-	import terminal from '@/Assets/experience/python/terminal.svg'
+	import python from '@/Assets/experience/backend/python/python.svg'
+	import terminal from '@/Assets/experience/backend/python/terminal.svg'
 
 	export default {
 		name: "Backend",

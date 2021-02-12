@@ -1,5 +1,5 @@
 <template>
-	<div class="frontend-wrapper">
+	<div class="other-wrapper">
 		<h1 class="title">Frontend</h1>
 		<!-- <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.</p> -->
 		<Gallery
@@ -25,7 +25,7 @@
 	import react from '@/Assets/experience/frontend/js/react.svg'
 
 	export default {
-		name: "Frontend",
+		name: "Other",
 		components: {
 			Gallery
 		},
@@ -110,9 +110,8 @@
 </script>
 
 <style lang="scss" scoped>
-	.frontend-wrapper {
+	.other-wrapper {
 		width: 100%;
-		/* height: var(--window-height); */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
