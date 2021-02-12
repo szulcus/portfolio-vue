@@ -10,7 +10,7 @@
 				<picture>
 					<source type="image/webp" :srcset="avatar_webp" />
 					<source type="image/jpeg" :srcset="avatar_jpg" />
-					<img class="avatar" :src="avatar_webp" alt="avatar" width="250" height="250" />
+					<img class="avatar" :src="avatar_jpg" alt="avatar" width="250" height="250" />
 				</picture>
 			</header>
 			<div class="logotype">
@@ -38,7 +38,7 @@
 		name: "FrontPage",
 		created() {
 			// Get images
-			const images = [avatar_png, avatar_webp , letter, overlay]
+			const images = [avatar_jpg, avatar_webp , letter, overlay]
 			// Load images
 			let loadImages = 0
 			images.forEach(url => {
@@ -54,7 +54,7 @@
 		},
 		data() {
 			return {
-				avatar_png,
+				avatar_jpg,
 				avatar_webp,
 				letter,
 				overlay,
