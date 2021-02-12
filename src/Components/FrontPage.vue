@@ -9,7 +9,7 @@
 			<header>
 				<picture>
 					<source type="image/webp" :srcset="avatar_webp" />
-					<source type="image/png" :srcset="avatar_png" />
+					<source type="image/jpeg" :srcset="avatar_jpg" />
 					<img class="avatar" :src="avatar_webp" alt="avatar" width="250" height="250" />
 				</picture>
 			</header>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-	import avatar_png from '@/Assets/avatar/avatar.jpg'
+	import avatar_jpg from '@/Assets/avatar/avatar.jpg'
 	import avatar_webp from '@/Assets/avatar/avatar.webp'
 	import letter from '@/Assets/s-letter.svg'
 	import overlay from '@/Assets/overlay.svg'
