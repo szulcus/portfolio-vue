@@ -70,9 +70,13 @@
 		created() {
 			// Get images
 			const images = []
-			this.experience.map(obj => {
-				images.push(obj.signet)
-				images.push(obj.logotype)
+			this.experience.forEach(obj => {
+				Object.values(obj.signet).forEach(img => {
+					images.push(img)
+				})
+				Object.values(obj.logotype).forEach(img => {
+					images.push(img)
+				})
 				obj.technologies.forEach(technology => images.push(technology.img))
 			})
 			// Load images
@@ -121,7 +125,6 @@
 	.gallery {
 		position: relative;
 		width: 90%;
-		/* height: 600px; */
 		max-width: 1000px;
 		.arrow {
 			position: absolute;
@@ -160,7 +163,7 @@
 			height: 100%;
 			clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 			border: 3px solid $decorative;
-			padding: 20px;
+			padding: 20px 5px;
 			.exp {
 				width: 100%;
 				height: 100%;
@@ -218,7 +221,7 @@
 						min-height: 250px;
 						clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 						border: 3px solid $decorative;
-						padding: 10px;
+						padding: 15px;
 						margin-bottom: 10px;
 						@media (min-width: 600px) {
 							padding: 20px;

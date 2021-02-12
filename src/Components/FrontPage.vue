@@ -6,11 +6,13 @@
 			<div class="loading__dott"></div>
 		</div>
 		<fragment v-else>
-			<picture>
-				<source type="image/webp" :srcset="avatar_webp" />
-				<source type="image/png" :srcset="avatar_png" />
-				<img class="avatar" :src="avatar_webp" alt="avatar" width="250" height="250" />
-			</picture>
+			<header>
+				<picture>
+					<source type="image/webp" :srcset="avatar_webp" />
+					<source type="image/png" :srcset="avatar_png" />
+					<img class="avatar" :src="avatar_webp" alt="avatar" width="250" height="250" />
+				</picture>
+			</header>
 			<div class="logotype">
 				<img class="s-letter" :src="letter" alt="s-letter" width="140" height="110" />
 				<div class="letters">

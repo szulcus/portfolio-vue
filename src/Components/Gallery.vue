@@ -156,7 +156,7 @@
 		height: 100%;
 		clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 		border: 3px solid $decorative;
-		padding: 20px;
+		padding: 20px 5px;
 		.exp {
 			width: 100%;
 			height: 100%;
@@ -207,7 +207,7 @@
 					min-height: 250px;
 					clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 					border: 3px solid $decorative;
-					padding: 10px;
+					padding: 15px;
 					@media (min-width: 600px) {
 						padding: 20px;
 						min-height: 200px;

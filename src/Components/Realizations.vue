@@ -1,7 +1,6 @@
 <template>
 	<div class="projects-wrapper">
 		<h1 class="title">Realizacje</h1>
-		<!-- <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.</p> -->
 		<RealizationsGallery
 			:experience="experience"
 		/>
