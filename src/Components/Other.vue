@@ -75,7 +75,7 @@
 							title: "Lighthouse",
 							content: `
 								Narzędziem które w ostatnim czasie dość intensywnie zacząłem wykorzystywać jest Google Lighthouse.
-								To program, który pozwala na przeprowadzenie audytu strony internetowej, dzięki czemu mam pewność, że projekty spełniają wszystkie standardy, oraz są szybkie i nowoczesne.
+								To program, który pozwala na przeprowadzenie audytu strony internetowej, dzięki czemu mam pewność, że moje projekty spełniają wszystkie standardy, oraz są szybkie i nowoczesne.
 							`
 						},
 						{
@@ -83,7 +83,7 @@
 							title: "GitHub",
 							content: `
 								Często korzystam z systemu kontroli wersji Git, aby mieć lepszą kontrolę nad projektem.
-								Dodatkowo dla projektów open source GitHub udostepnia darmowy hosting wraz z customową domeną (o którym wspomniałem już w sekcji "Frontend").
+								Dodatkowo dla projektów open source GitHub udostepnia darmowy hosting wraz z customową domeną (o czym wspomniałem już w sekcji "Frontend").
 							`
 						},
 						{
@@ -98,7 +98,7 @@
 							img: postman,
 							title: "Postman",
 							content: `
-								Do wysyłania zapytań do API podczas pisania backendu najczęściej służy mi aplikacja Postman.
+								Do wysyłania zapytań do API podczas pisania backendu najczęściej służy mi narzędzie Postman.
 								Pozwala na szybkie testowanie i rozwiązywanie błędów.
 							`
 						},

@@ -179,7 +179,7 @@
 							webp: cichy_dworek_logotype_webp
 						},
 						url: "https://cichy-dworek.pl",
-						git: "https://szulcus.pl",
+						git: "https://github.com/jakub104/cichy-dworek",
 						technologies: [
 							{
 								img: vue,

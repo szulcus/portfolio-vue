@@ -45,7 +45,8 @@
 							title: "Google Analytics",
 							content: `
 								Firebase udostepnia Google Analytics.
-								Narzędzie, dzięki któremu właściciel strony jest w stanie monitorować między innymi ilość wejść na stronę, lub innych akcji na niej wykonywanej.
+								Narzędzie, dzięki któremu właściciel strony jest w stanie monitorować akcje wykonywane na stronie.
+								W tym między innymi ilość odwiedzin.
 							`
 						},
 						{
@@ -68,8 +69,8 @@
 							img: au,
 							title: "Authentication",
 							content: `
-								Z użyciem Firebase Authentication jestem w stanie zrobić system logowania na stronie, dzięki czemu każdy użytkownik będzie mógł tworzyć i edytować własne dane.
-								Rejestracja może być dostępna standardowo z poziomu strony, jak również z pomocą najpopularniejszych Social Media takich jak: Google+, Facebook, Twitter, czy GitHub.
+								Z użyciem Firebase Authentication jestem w stanie zrobić system logowania na stronie.
+								Rejestracja może być dostępna standardowo z poziomu strony, jak również za pomocą najpopularniejszych Social Media takich jak: Google+, Facebook, Twitter, czy GitHub.
 							`
 						},
 						{
@@ -77,7 +78,7 @@
 							title: "Firebase Hosting",
 							content: `
 								Firebase (choć nie tylko, o czym piszę w sekcji "Inne") udostepnia darmowy Hosting, wraz z cutomową domeną.
-								Dzięki temu dla prostych stron jestem w stanie zminimalozować coroczne opłaty jedynie do domeny.
+								Dzięki temu dla prostych stron jestem w stanie ograniczyć coroczne opłaty jedynie do domeny.
 							`
 						},
 						{
@@ -86,7 +87,7 @@
 							content: `
 								Usługa Cloud Functions pozwala mi na wykonywanie określonych funkcji po stronie backendu (na przykład podczas zmian z bazie danych).
 								Wspomniane wcześniej funkcje są darmowe, lecz z pewnymi ograniczeniami.
-								Niestety usługa funkcji w chmurze jest płatna, jednak są to jedynie drobne opłaty.
+								Ta funkcja jest płatna, jednak są to jedynie drobne koszty.
 							`
 						},
 					],

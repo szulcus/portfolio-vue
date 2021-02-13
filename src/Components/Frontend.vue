@@ -50,18 +50,18 @@
 						},
 						{
 							img: search,
-							title: "Diabeł tkwi w szczegółach",
+							title: "Szczegóły",
 							content: `
-								Dlatego zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis podczas wyszukiwania, maskowalne ikony, oraz inne metatagi.
+								Diabeł tkwi w szczegółach. Dlatego zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis, maskowalne ikony, oraz inne metatagi.
 								Wszystko zgodnie ze sdandardem PWA (Progressive Web App).
 							`
 						},
 						{
 							img: components,
-							title: "Podział kodu jest bardzo ważny",
+							title: "Podział kodu",
 							content: `
 								Staram się jak najczęściej dzielić kod na komponenty.
-								Potrafię również posługiwać się silnikami szablonów, takim jak Pug.js, EJS, czy Szablonami Django, co pozwala mi na tworzenie układów często występujących na stronie.
+								Potrafię również posługiwać się silnikami szablonów, takimi jak Pug.js, EJS, czy Szablonami Django, co pozwala mi na tworzenie układów często występujących na stronie.
 								Umożliwia mi to zachowanie porządku, oraz szybkie wdrażanie ewentualnych poprawek.
 							`
 						},

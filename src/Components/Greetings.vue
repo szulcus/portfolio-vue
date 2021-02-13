@@ -1,16 +1,16 @@
 <template>
 	<div class="greetings-wrapper">
 		<h1 class="title">Kim jestem?</h1>
-		<h2 class="subtitle">Cześć! Miło Cię tu widzieć! {{':)'}}</h2>
+		<h2 class="subtitle">Cześć! Miło Cię tu widzieć!</h2>
 		<p class="description">
 			Nazywam się Jakub Schulz i od ponad 3 lat tworzę strony, oraz aplikacje internetowe.
-			Obecnie programowanie jest to moją największą pasją.
-			Studiuję informatykę ze specjalizacją <a class="link" href="https://www.nafrontendzie.pl/frontend-developer-wlasciwie-znaczy" v-rel>Front-end Developer </a>, natomiast w ostatnim czasie coraz bardziej interesuję się również <a class="link" href="https://sdacademy.pl/blog/co-to-jest-back-end/" v-rel>backendem</a> stron.
+			Obecnie studiuję informatykę ze specjalizacją <a class="link" href="https://www.nafrontendzie.pl/frontend-developer-wlasciwie-znaczy" v-rel>Front-end Developer</a>, a programowanie jest to moją największą pasją.
+			W ostatnim czasie coraz bardziej interesuję się również <a class="link" href="https://sdacademy.pl/blog/co-to-jest-back-end/" v-rel>backendem</a>.
 			Określiłbym się zatem jako początkujący <a class="link" href="https://blog.edugrafia.pl/czym-rozni-sie-front-end-back-end-full-stack-developer/" v-rel>Full-stack Developer</a>.<br />
 		</p>
 		<p class="description">
 			Dodatkowo interesuję się gotowaniem, psychologią i rozwojem osobistym.
-			Zapraszam do zapoznania sie z moimi umiejętnościami:
+			Zapraszam do zapoznania sie z moimi umiejętnościami {{':)'}}
 		</p>
 	</div>
 </template>
