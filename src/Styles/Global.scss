@@ -28,7 +28,7 @@ body {
 	font-size: 18px;
 	font-family: 'Ubuntu', sans-serif;
 	color: $primary;
-	min-width: 400px;
+	min-width: 360px;
 	@media (min-width: 600px) {
 		background-image: url("../Assets/overlay.svg");
 		background-repeat: repeat-y;

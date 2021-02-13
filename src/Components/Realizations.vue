@@ -143,8 +143,8 @@
 							webp: easy_word_logotype_webp
 						},
 						title: "EasyWord",
-						url: "https://szulcus.pl",
-						git: "https://easyword123.pl",
+						url: "https://easyword123.pl",
+						git: "https://github.com/jakub104/easy-word",
 						technologies: [
 							{
 								img: react,
@@ -213,7 +213,7 @@
 							webp: my_notes_logotype_webp
 						},
 						title: "MyNotes",
-						url: "https://mynotes-szulcus.netlify.app/#/pl",
+						url: "https://mynotes-szulcus.netlify.app",
 						git: "https://github.com/jakub104/my-notes",
 						technologies: [
 							{
@@ -304,7 +304,8 @@
 						],
 						content: `
 							Scommunity jest projektem nad którym wciąż pracuję.
-							W zamyśle ma być uproszczona wercją Facebooka
+							W zamyśle ma być to uproszczona wersja Facebooka, gdzie będzie można dodawać posty do swojej tablicy oraz pisać na czacie ze znajomymi.
+							Platforma będzie dostępna w wielu wersjach językowych.
 						`
 					}
 				]

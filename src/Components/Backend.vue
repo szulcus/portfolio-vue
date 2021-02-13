@@ -1,7 +1,6 @@
 <template>
 	<div class="backend-wrapper">
 		<h1 class="title">Backend</h1>
-		<!-- <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.</p> -->
 		<Gallery
 			:experience="experience"
 		/>
@@ -25,6 +24,7 @@
 	import npm from '@/Assets/experience/backend/nodejs/npm.svg'
 	// PYTHON
 	import python from '@/Assets/experience/backend/python/python.svg'
+	import django from '@/Assets/experience/backend/python/django.svg'
 	import terminal from '@/Assets/experience/backend/python/terminal.svg'
 
 	export default {
@@ -41,47 +41,54 @@
 							title: '<span style="color: #ffcb2b">F</span>irebase'
 						},
 						{
-							img: au,
-							title: "Firebase Authentication",
+							img: ga,
+							title: "Google Analytics",
 							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
-							`
-						},
-						{
-							img: cf,
-							title: "Cloud Functions",
-							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+								Firebase udostepnia Google Analytics.
+								Narzędzie, dzięki któremu właściciel strony jest w stanie monitorować między innymi ilość wejść na stronę, lub innych akcji na niej wykonywanej.
 							`
 						},
 						{
 							img: db,
 							title: "Firestore",
 							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
-							`
-						},
-						{
-							img: fh,
-							title: "Firebase Hosting",
-							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+								Z pomocą usługi Firebase Firestore potrafię stworzyć strony z edytowalną zawartością.
+								Dzięki temu jestem w stanie szybko stworzyć stronę, którą w prosty sposób i w każdej chwili można dostosować wedle uznania.
 							`
 						},
 						{
 							img: st,
 							title: "Firebase Storage",
 							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+								Usługa Firebase Storage pozwala mi na przechowywanie nie tylko tekstu, lecz również zdjęć i filmów.
+								Dzięki temu na stronie można również "przechowywać" pliki multimedialne.
 							`
 						},
 						{
-							img: ga,
-							title: "Google Analytics",
+							img: au,
+							title: "Authentication",
 							content: `
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.
+								Z użyciem Firebase Authentication jestem w stanie zrobić system logowania na stronie, dzięki czemu każdy użytkownik będzie mógł tworzyć i edytować własne dane.
+								Rejestracja może być dostępna standardowo z poziomu strony, jak również z pomocą najpopularniejszych Social Media takich jak: Google+, Facebook, Twitter, czy GitHub.
 							`
-						}
+						},
+						{
+							img: fh,
+							title: "Firebase Hosting",
+							content: `
+								Firebase (choć nie tylko, o czym piszę w sekcji "Inne") udostepnia darmowy Hosting, wraz z cutomową domeną.
+								Dzięki temu dla prostych stron jestem w stanie zminimalozować coroczne opłaty jedynie do domeny.
+							`
+						},
+						{
+							img: cf,
+							title: "Cloud Functions",
+							content: `
+								Usługa Cloud Functions pozwala mi na wykonywanie określonych funkcji po stronie backendu (na przykład podczas zmian z bazie danych).
+								Wspomniane wcześniej funkcje są darmowe, lecz z pewnymi ograniczeniami.
+								Niestety usługa funkcji w chmurze jest płatna, jednak są to jedynie drobne opłaty.
+							`
+						},
 					],
 					[
 						{
@@ -90,15 +97,28 @@
 						},
 						{
 							img: express,
-							content: "express Lorem ipsum dolor",
+							title: "Express.js",
+							content: `
+								Potrafię korzystać z frameworka Express.js, oraz stworzyć w nim proste REST API.
+								Obecnie jestem na etapie tworzenia API do jednego z moich większych projektów nad którym pracuję (więcej o nim piszę w zakładce "Realizacje").
+							`,
 						},
 						{
 							img: mongodb,
-							content: "mongodb Lorem ipsum dolor",
+							title: "MongoDB",
+							content: `
+								Przy korzystaniu z nierelacyjnej bazy danych MongoDB najczęściej posługuję się platformą modelowania Mongoose.
+								Potrafię korzystać z MongoDB Atlas, dzięki czemu mam dostęp do danych w przeglądarce.
+							`,
 						},
 						{
 							img: npm,
-							content: "npm Lorem ipsum dolor",
+							title: "NPM",
+							content: `
+								Często korzystam z managera pakietów NPM.
+								Potrafię także tworzyć własne paczki (o czym więcej piszę w sekcji "Realizacje").
+								Umiem również posługiwać się podobnym managerem pakietów jakim jest yarn.
+							`,
 						}
 					],
 					[
@@ -108,12 +128,20 @@
 						},
 						{
 							img: terminal,
-							content: "Django lorem ipsum dolor"
+							title: "Aplikacje konsolowe",
+							content: `
+								W pythonie potrafię tworzyć przeróżne aplikacje konsolowe, oraz korzystać z instalatora pakietów pip.
+								W nauce tego języka pomogłem juz kilku moim znajomym, w tym siostrze na studiach.
+							`
 						},
 						{
-							img: terminal,
-							content: "Terminal lorem ipsum dolor"
-						}
+							img: django,
+							title: "Django",
+							content: `
+								Umiem w podstawowym zakresie posługiwać się frameworkiem Django.
+								Potrafię stworzyć proste API, oraz posługiwać się Szablonami Django.
+							`
+						},
 					],
 				]
 			}
@@ -123,8 +151,6 @@
 
 <style lang="scss" scoped>
 	.backend-wrapper {
-		width: 100%;
-		/* height: var(--window-height); */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -133,15 +159,6 @@
 			font-size: 40px;
 			margin: 30px 0;
 			@include line;
-		}
-		.description {
-			font-size: 20px;
-			width: 100%;
-			text-align: center;
-			max-width: 1000px;
-			/* @media (min-width: 600px) {
-				width: 70%;
-			} */
 		}
 	}
 </style>

@@ -64,7 +64,8 @@
 		data() {
 			return {
 				exchange: false,
-				activeIndex: 0
+				activeIndex: 0,
+				isLoading: true
 			}
 		},
 		created() {

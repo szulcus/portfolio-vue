@@ -181,6 +181,7 @@
 				justify-content: center;
 				flex-wrap: wrap;
 				margin-top: 10px;
+				padding: 0 10px;
 				.nav__img {
 					width: 40px;
 					height: 40px;

@@ -1,6 +1,6 @@
 <template>
 	<div class="other-wrapper">
-		<h1 class="title">Frontend</h1>
+		<h1 class="title">Inne</h1>
 		<!-- <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.</p> -->
 		<Gallery
 			:experience="experience"
@@ -10,19 +10,29 @@
 
 <script>
 	import Gallery from '@/Components/Gallery'
-	// HTML
-	import html from '@/Assets/experience/frontend/html/html.svg'
-	// CSS
-	import css from '@/Assets/experience/frontend/css/css.svg'
-	import noBootstrap from '@/Assets/experience/frontend/css/noBootstrap.svg'
-	import rwd from '@/Assets/experience/frontend/css/rwd.svg'
-	import sass from '@/Assets/experience/frontend/css/sass.svg'
-	import sc from '@/Assets/experience/frontend/css/sc.svg'
-	// JS
-	import js from '@/Assets/experience/frontend/js/js.svg'
-	import es6 from '@/Assets/experience/frontend/js/es6.svg'
-	import nojq from '@/Assets/experience/frontend/js/nojq.svg'
-	import react from '@/Assets/experience/frontend/js/react.svg'
+	// CONFIG
+	import config from '@/Assets/experience/other/config/config.svg'
+	import vsc from '@/Assets/experience/other/config/vsc.svg'
+	import folder from '@/Assets/experience/other/config/folder.svg'
+	import babel from '@/Assets/experience/other/config/babel.svg'
+	// LANGUAGES
+	import languages from '@/Assets/experience/other/languages/languages.svg'
+	import cs from '@/Assets/experience/other/languages/cs.svg'
+	import cpp from '@/Assets/experience/other/languages/cpp.svg'
+	import md from '@/Assets/experience/other/languages/md.svg'
+	import vba from '@/Assets/experience/other/languages/vba.svg'
+	// TOOLS
+	import tools from '@/Assets/experience/other/tools/tools.svg'
+	import lighthouse from '@/Assets/experience/other/tools/lighthouse.svg'
+	import github from '@/Assets/experience/other/tools/github.svg'
+	import netlify from '@/Assets/experience/other/tools/netlify.svg'
+	import postman from '@/Assets/experience/other/tools/postman.svg'
+	import xd from '@/Assets/experience/other/tools/xd.svg'
+	// OFFICE
+	import office from '@/Assets/experience/other/office/office.svg'
+	import excel from '@/Assets/experience/other/office/excel.svg'
+	import powerpoint from '@/Assets/experience/other/office/powerpoint.svg'
+	import word from '@/Assets/experience/other/office/word.svg'
 
 	export default {
 		name: "Other",
@@ -34,73 +44,146 @@
 				experience: [
 					[
 						{
-							img: html,
-							title: '<span style="color: #E44D26">H</span>TML 5'
+							img: config,
+							title: 'Konfiguracja'
 						},
 						{
-							img: html,
-							title: "Najnowszy standard",
+							img: vsc,
+							title: "VS Code",
 							content: `
-								Strony i aplikacje tworzę zgodne z najnowszym standardem HTML5.
-								Tworzone przeze mnie projekty są w pełni semantyczne, a co za tym idzie nowoczesne i lepiej współpracują z innymi urządzeniami.
+								Dużą wagę przykładam do wyglądu i konfiguracji mojego stanowiska pracy, którym na codzień jest Visual Studio Code.
+								Staram się, aby moja praca była wydajna, dlatego korzystam z wielu paczek i skrótów.
+								Potrafię również samemu tworzyć własne snippety, czy skróty klawiszowe.
 							`
 						},
 						{
-							img: html,
-							title: "Diabeł tkwi w szczegółach",
+							img: folder,
+							title: "Struktura plików",
 							content: `
-								Dlatego zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis podczas wyszukiwania, maskowalne ikony, oraz inne metatagi.
-								Wszystko zgodnie ze sdandardem PWA (Progressive Web App).
+								Ważny jest dla mnie porządek.
+								Odpowiednia struktóra folderów i plików przy większych projektach jest koniecznością, dlatego staram się od początku przykładać do tego uwagę.
 							`
-						},
-						{
-							img: html,
-							title: "Podział kodu jest bardzo ważny",
-							content: `
-								Staram się jak najczęściej dzielić kod na komponenty.
-								Potrafię również posługiwać się silnikami szablonów, takim jak Pug.js, EJS, czy Szablonami Django, co pozwala mi na tworzenie układów często występujących na stronie.
-								Umożliwia mi to zachowanie porządku, oraz szybkie wdrażanie ewentualnych poprawek.
-							`
-						},
-					],
-					[
-						{
-							img: css,
-							title: '<span style="color: #2062AF">C</span>SS 3'
-						},
-						{
-							img: noBootstrap,
-							content: "noBootstrap Lorem ipsum dolor",
-						},
-						{
-							img: rwd,
-							content: "rwd Lorem ipsum dolor",
-						},
-						{
-							img: sass,
-							content: "sass Lorem ipsum dolor",
-						},
-						{
-							img: sc,
-							content: "sc Lorem ipsum dolor",
 						}
 					],
 					[
 						{
-							img: js,
-							title: '<span style="color: #ffcc33">J</span>ava<span style="color: #ffcc33">S</span>cript ES6'
+							img: tools,
+							title: 'Narzędzia'
 						},
 						{
-							img: es6,
-							content: "lorem ipsum dolor"
+							img: lighthouse,
+							title: "Lighthouse",
+							content: `
+								Narzędziem które w ostatnim czasie dość intensywnie zacząłem wykorzystywać jest Google Lighthouse.
+								To program, który pozwala na przeprowadzenie audytu strony internetowej, dzięki czemu mam pewność, że projekty spełniają wszystkie standardy, oraz są szybkie i nowoczesne.
+							`
 						},
 						{
-							img: nojq,
-							content: "lorem ipsum dolor"
+							img: github,
+							title: "GitHub",
+							content: `
+								Często korzystam z systemu kontroli wersji Git, aby mieć lepszą kontrolę nad projektem.
+								Dodatkowo dla projektów open source GitHub udostepnia darmowy hosting wraz z customową domeną (o którym wspomniałem już w sekcji "Frontend").
+							`
 						},
 						{
-							img: react,
-							content: "lorem ipsum dolor"
+							img: netlify,
+							title: "Netlify",
+							content: `
+								Często korzystam również z usług hostingowych platformy Netlify, która ma opcję publikacji stron automatycznie po zapisaniu zmian na GitHub.
+								W tym wypadku również jest możliwość zmiany domeny na własną.
+							`
+						},
+						{
+							img: postman,
+							title: "Postman",
+							content: `
+								Do wysyłania zapytań do API podczas pisania backendu najczęściej służy mi aplikacja Postman.
+								Pozwala na szybkie testowanie i rozwiązywanie błędów.
+							`
+						},
+						{
+							img: babel,
+							title: "Babel",
+							content: `
+								Aby każda przeglądarka mogła poradzić sobie z kompilacją nowości JavaScript ES6, korzystam z narzędzia Babel.
+								Korzystam z tego również po stronie backendu (w Node.js), aby importować pliki za pomocą ES Mdules.
+							`
+						},
+						{
+							img: xd,
+							title: "Adobe XD",
+							content: `
+								Nie jestem grafikiem ale uważam, że mam dobre poczucie gustu.
+								Prawie wszystkie loga projektów przedstawionych w sekcji "Realizacje" zostały zaprojektowane i utworzone przeze mnie w programie Adobe Experience Design.
+							`
+						},
+					],
+					[
+						{
+							img: languages,
+							title: 'Inne języki'
+						},
+						{
+							img: cs,
+							title: "C#",
+							content: `
+								Obecnie na studiach uczę się języka C#.
+								Jest to poziom zdecydowanie początkujący, natomiast jako ciekawostka myślę, że warto o tym wspomnieć.
+							`
+						},
+						{
+							img: cpp,
+							title: "C++",
+							content: `
+								W liceum, przez całą klasę trzecią uczyłem się języka C++.
+								Szczerze mówiąc nie lubię zbytnio tego języka i idzie mi w nim jeszcze gorzej niż w C#, ale znam podstawową składnię.
+							`
+						},
+						{
+							img: md,
+							title: "Markdown",
+							content: `
+								Potrafię posługiwać się językiem Markdown.
+								Całą dokumentację opisującą moją paczkę na npm (więcej o niej w sekcji "Realizacje") napisałem właśnie w nim.
+							`
+						},
+						{
+							img: vba,
+							title: "VBA",
+							content: `
+								W drugiej licueum wraz z obsługą Excela, uczyłem się o języka Visual Basic for Applications.
+								Nauczyłem się w nim tworzyć proste funkcje i makra.
+							`
+						},
+					],
+					[
+						{
+							img: office,
+							title: 'Office 365'
+						},
+						{
+							img: excel,
+							title: "Excel",
+							content: `
+								Jak już wcześniej wspomniałem, potrafię używać zaawansowanych funkcji Excela, oraz z pomocą języka VBA tworzyć własne makra.
+							`
+						},
+						{
+							img: powerpoint,
+							title: "Power Point",
+							content: `
+								Od dziecka fascynowało mnie tworzenie ładnie przedstawionej, wirtualnej treści.
+								W szkole często brałem udział w konkursach i zawsze z niecierpliwością czekałem na zadania dodatkowe, by móc pochwalić sie swoją twórczością.
+								Obecnie pasja ta przerodziła się u mnie w tworzenie stron internetowych.
+							`
+						},
+						{
+							img: word,
+							title: "Word",
+							content: `
+								Potrafię również w podstawowym zakresie tworzyć dokumenty w programie Word.
+							`
 						},
 					],
 				]

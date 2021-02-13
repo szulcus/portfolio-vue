@@ -5,6 +5,7 @@
 			<Greetings />
 			<Frontend />
 			<Backend />
+			<Other />
 			<Realizations />
 		</div>
 		<Footer />
@@ -16,6 +17,7 @@
 	import Greetings from '@/Components/Greetings'
 	import Frontend from '@/Components/Frontend'
 	import Backend from '@/Components/Backend'
+	import Other from '@/Components/Other'
 	import Realizations from '@/Components/Realizations'
 	import Footer from '@/Components/Footer'
 	export default {
@@ -25,6 +27,7 @@
 			Greetings,
 			Frontend,
 			Backend,
+			Other,
 			Realizations,
 			Footer
 		}

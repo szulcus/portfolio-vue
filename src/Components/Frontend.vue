@@ -1,7 +1,6 @@
 <template>
 	<div class="frontend-wrapper">
 		<h1 class="title">Frontend</h1>
-		<!-- <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos asperiores, rem quos dolore autem cupiditate exercitationem accusamus velit rerum dolorem corrupti nostrum quae quasi officia architecto? Sit, iste nam.</p> -->
 		<Gallery
 			:experience="experience"
 		/>
@@ -12,6 +11,9 @@
 	import Gallery from '@/Components/Gallery'
 	// HTML
 	import html from '@/Assets/experience/frontend/html/html.svg'
+	import modern from '@/Assets/experience/frontend/html/modern.svg'
+	import search from '@/Assets/experience/frontend/html/search.svg'
+	import components from '@/Assets/experience/frontend/html/components.svg'
 	// CSS
 	import css from '@/Assets/experience/frontend/css/css.svg'
 	import noBootstrap from '@/Assets/experience/frontend/css/noBootstrap.svg'
@@ -20,9 +22,10 @@
 	import sc from '@/Assets/experience/frontend/css/sc.svg'
 	// JS
 	import js from '@/Assets/experience/frontend/js/js.svg'
+	import react from '@/Assets/experience/frontend/js/react.svg'
+	import vue from '@/Assets/experience/frontend/js/vue.svg'
 	import es6 from '@/Assets/experience/frontend/js/es6.svg'
 	import nojq from '@/Assets/experience/frontend/js/nojq.svg'
-	import react from '@/Assets/experience/frontend/js/react.svg'
 
 	export default {
 		name: "Frontend",
@@ -35,10 +38,10 @@
 					[
 						{
 							img: html,
-							title: '<span style="color: #E44D26">H</span>TML 5'
+							title: '<span style="color: #E44D26">H</span>TML'
 						},
 						{
-							img: html,
+							img: modern,
 							title: "Najnowszy standard",
 							content: `
 								Strony i aplikacje tworzę zgodne z najnowszym standardem HTML5.
@@ -46,7 +49,7 @@
 							`
 						},
 						{
-							img: html,
+							img: search,
 							title: "Diabeł tkwi w szczegółach",
 							content: `
 								Dlatego zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis podczas wyszukiwania, maskowalne ikony, oraz inne metatagi.
@@ -54,7 +57,7 @@
 							`
 						},
 						{
-							img: html,
+							img: components,
 							title: "Podział kodu jest bardzo ważny",
 							content: `
 								Staram się jak najczęściej dzielić kod na komponenty.
@@ -66,42 +69,81 @@
 					[
 						{
 							img: css,
-							title: '<span style="color: #2062AF">C</span>SS 3'
-						},
-						{
-							img: noBootstrap,
-							content: "noBootstrap Lorem ipsum dolor",
+							title: '<span style="color: #2062AF">C</span>SS'
 						},
 						{
 							img: rwd,
-							content: "rwd Lorem ipsum dolor",
+							title: "Responsywność",
+							content: `
+								Wszystkie moje projekty są w pełni responsywne, tak aby urzytkownicy urządzeń mobilnych, czy nawet zegarków mogli cieszyć się dobrze przeststawionymi treściami.
+								Unikam starego podejścia floatów i korzystam z nowych narzędzi takich jak flexbox, czy grid.
+							`,
 						},
 						{
 							img: sass,
-							content: "sass Lorem ipsum dolor",
+							title: "Czystość kodu",
+							content: `
+								Aby utrzymać czystość kodu, często korzystam z możliwości, które oferuje preprocesor SASS.
+								Podział plików na osobne style globalne, zmienne, animacje, czy mixiny bardzo ułatwia późniejsze zarządzanie projektem.
+							`
 						},
 						{
 							img: sc,
-							content: "sc Lorem ipsum dolor",
+							title: "CSS in JS",
+							content: `
+								Jeśli natomiast pracuję we frameworku takim jak React, do stylowania najczęściej korzystam ze Styled Components.
+								Jestem zaznajomiony z takimi pojęciami jak rozszerzanie komponentów, props, czy theme provider
+							`
+						},
+						{
+							img: noBootstrap,
+							title: "Dokładność",
+							content: `
+								Do każdego klienta podchodzę indywidualnie.
+								Jestem przeciwnikiem korzystania z gotowych frameworków CSS takich jak Bootstrap czy Foundation.
+								Uważam, że dopracowany na stronie powinien być każdy szczegół, a zainwestowany czas zwróci się nam z nawiązką.
+							`
 						}
 					],
 					[
 						{
 							img: js,
-							title: '<span style="color: #ffcc33">J</span>ava<span style="color: #ffcc33">S</span>cript ES6'
+							title: '<span style="color: #ffcc33">J</span>ava<span style="color: #ffcc33">S</span>cript'
 						},
 						{
-							img: es6,
-							content: "lorem ipsum dolor"
-						},
-						{
-							img: nojq,
-							content: "lorem ipsum dolor"
+							img: vue,
+							title: "Vue.js",
+							content: `
+								Z frameworkiem Vue mam styczność już ponad pół roku.
+								Odkąd poznałem ten framework, zakochałem się w nim.
+								Bardzo podoba mi się jego prostota i elastyczność.
+								Stworzyłem w nim już 4 większe projekty, o których więcej w sekcji "Realizacje".
+							`
 						},
 						{
 							img: react,
-							content: "lorem ipsum dolor"
+							title: "React.js",
+							content: `
+								React był pierwszym frameworkiem JavaScriptu, z którym miałem styczność.
+								Pozwolił mi na napisanie wielu ciekawych aplikacji, w tym platwormy EasyWord, którą rozwijałem około 1,5 roku (więcej o niej piszę w sekcji "Realizacje")
+							`
 						},
+						{
+							img: es6,
+							title: "ECMAScript 6",
+							content: `
+								Korzystam z najnowszych funkcji języka JavaScript w standardzie ES6+, co przekłada sie na jakość kodu.
+								Aby jednak wszystkie te nowości były zrozumiałe dla większości przeglądarek, korzystam z narzędzia Babel (o czym dokładniej piszę w sekcji "Inne").
+							`
+						},
+						{
+							img: nojq,
+							title: "Nie dla JQuery",
+							content: `
+								Nie używam przestarzałych technologii, takich jak JQuery, co przekłada sie na szybkość moich stron.
+								Jednocześnie jestem powierzchownie zaznajomiony z tą biblioteką, dzięki czemu potrafię odnaleść się w starych projektach.
+							`
+						}
 					],
 				]
 			}
@@ -111,8 +153,6 @@
 
 <style lang="scss" scoped>
 	.frontend-wrapper {
-		width: 100%;
-		/* height: var(--window-height); */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -121,15 +161,6 @@
 			font-size: 40px;
 			margin: 30px 0;
 			@include line;
-		}
-		.description {
-			font-size: 20px;
-			width: 100%;
-			text-align: center;
-			max-width: 1000px;
-			/* @media (min-width: 600px) {
-				width: 70%;
-			} */
 		}
 	}
 </style>

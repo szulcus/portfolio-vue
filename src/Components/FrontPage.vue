@@ -67,6 +67,7 @@
 <style lang="scss" scoped>
 	.front-page-wrapper {
 		width: 100%;
+		height: 100vh;
 		height: var(--window-height);
 		min-height: 550px;
 		display: flex;

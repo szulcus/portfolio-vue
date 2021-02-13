@@ -26,6 +26,7 @@
 		<div :class="['info-wrapper', {'info-wrapper--active': infoActive}]">
 			Icons made by
 			<a class="flaticon-link" href="https://www.freepik.com" title="Freepik" v-rel>Freepik</a>,
+			<a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>,
 			<a class="flaticon-link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" v-rel>Pixel perfect</a> and
 			<a class="flaticon-link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs" v-rel>DinosoftLabs</a> from
 			<a class="flaticon-link" href="https://www.flaticon.com/" title="Flaticon" v-rel>www.flaticon.com</a>
