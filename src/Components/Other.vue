@@ -75,7 +75,7 @@
 							title: "Lighthouse",
 							content: `
 								Narzędziem które w ostatnim czasie dość intensywnie zacząłem wykorzystywać jest Google Lighthouse.
-								To program, który pozwala na przeprowadzenie audytu strony internetowej, dzięki czemu mam pewność, że moje projekty spełniają wszystkie standardy, oraz są szybkie i nowoczesne.
+								To program, który pozwala na przeprowadzenie audytu strony internetowej, dzięki czemu mam pewność, że moje projekty spełniają wszystkie standardy oraz są szybkie i nowoczesne.
 							`
 						},
 						{
@@ -166,7 +166,7 @@
 							img: excel,
 							title: "Excel",
 							content: `
-								Jak już wcześniej wspomniałem, potrafię używać zaawansowanych funkcji Excela, oraz z pomocą języka VBA tworzyć własne makra.
+								Jak już wcześniej wspomniałem, potrafię używać zaawansowanych funkcji Excela oraz z pomocą języka VBA tworzyć własne makra.
 							`
 						},
 						{

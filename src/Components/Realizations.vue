@@ -94,8 +94,8 @@
 						content: `
 							Aplikacja ToFu (True or False, uh?) służy głównie do zabawy ze znajomymi.
 							Użytkownicy mogą odpowiadać na quizy innych, lub tworzyć własne i rywalizować w rankingu.
-							Aby rozwiązać quiz zależy odpowiedzieć (twierdząco lub przecząco) na pytania.
-							Na koniec pojawia się tabela z wynikami i procenten dobrych odpowiedzi.
+							Aby rozwiązać quiz zależy odpowiedzieć na pytania (twierdząco lub przecząco).
+							Na koniec pojawia się tabela z wynikami i procentem poprawnych odpowiedzi.
 						`
 					},
 					{
@@ -130,7 +130,7 @@
 						content: `
 							Nowoczesna strona internetowa dla firmy budowlanej Na-J.
 							Zawiera galerię z podglądem i opisem wybranych projektów.
-							W zakładce "Kontakt" widnieje mapka z siedzibą firmy, adres i formularz kontaktowy.
+							W zakładce "Kontakt" widnieje mapka z siedzibą firmy, adres oraz formularz kontaktowy.
 						`
 					},
 					{
@@ -163,10 +163,10 @@
 							}
 						],
 						content: `
-							Platforma do nauki słówek EasyWord umożliwia korzystanie bez konta, jednak nie zapisujemy w tym trybie swoich postępów.
+							Platforma do nauki słówek EasyWord jest świetną alternatywą dla tradycyjnej metody nauki języków.
 							Po rejestracji mamy dostęp swojego profilu, gdzie możemy edytować zdjęcie, nick oraz biogram.
-							Możliwa jest rywalizacja z innymi użytkownikami na czacie, oraz pisanie z nimi na czacie.
-							Aplikacja zawiera wiele mini gier i innych funkcjonalności, dzięki czemu nauka słówek jest dużo ciekawcza.
+							Możliwa jest rywalizacja z innymi użytkownikami na czacie oraz pisanie z nimi na czacie.
+							Aplikacja zawiera także wiele mini gier i innych funkcjonalności, których nie sposób opisać w jednym akapicie.
 						`
 					},
 					{
@@ -198,9 +198,9 @@
 							}
 						],
 						content: `
-							Strona internetowa domu opieki Cichy Dworek.
+							Strona internetowa stworzona dla domu opieki Cichy Dworek.
 							Posiada galerię w formie wirtualnego spaceru po budynku.
-							W zakładce "Kontakt" znajdziemy mapkę, adres, linki do social mediów, oraz formularz kontaktowy.
+							W zakładce "Kontakt" znajdziemy mapkę, adres, linki do social mediów oraz formularz kontaktowy.
 						`
 					},
 					{
@@ -233,10 +233,10 @@
 							}
 						],
 						content: `
-							Aplikacja do tworzenia notatek.
-							Aby zapisać swoje notatki, należy zalogować sie do aplikacji.
-							Możliwe jest tworzenie notatek w formie tekstu (edycja nagłówka i treści) lub listy (edycja nagłówka, oraz edycja, dodawanie i usuwanie elementów).
+							Aplikacja MyNotes służy do tworzenia notatek.
+							Możliwe jest tworzenie notatek w formie tekstu lub listy.
 							Notatki możemy trzymać w trzech folderach (głównym, archiwum i usuniętych).
+							Aby zapisać swoje notatki należy się zarejestrować.
 							Aplikacja działa w 8 językach.
 						`
 					},
@@ -264,7 +264,8 @@
 							},
 						],
 						content: `
-							RootCalculate jest paczką na npm, która służy do liczenia pierwiastków.
+							RootCalculate jest paczką na NPM, która służy do liczenia pierwiastków.
+							Program nie ogranicza się jedynie do pierwiastków kwadratowych.
 							Umożliwia również rozkład liczb na czynniki pierwsze.
 							Dokumentacja została utworzona w języku Markdown.
 						`

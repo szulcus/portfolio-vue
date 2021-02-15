@@ -9,7 +9,7 @@
 			<header>
 				<picture>
 					<source type="image/webp" :srcset="avatar_webp" />
-					<source type="image/jpeg" :srcset="avatar_jpg" />
+					<!-- <source type="image/jpeg" :srcset="avatar_jpg" /> -->
 					<img class="avatar" :src="avatar_jpg" alt="avatar" width="250" height="250" />
 				</picture>
 			</header>

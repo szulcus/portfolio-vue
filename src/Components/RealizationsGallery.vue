@@ -11,12 +11,12 @@
 				<a :href="experience[activeIndex].url" class="realization__logo" v-rel>
 					<picture>
 						<source type="image/webp" :srcset="experience[activeIndex].signet.webp">
-						<source type="image/png" :srcset="experience[activeIndex].signet.png">
+						<!-- <source type="image/png" :srcset="experience[activeIndex].signet.png"> -->
 						<img class="logo__signet" :src="experience[activeIndex].signet.png" alt="signet" width="130" height="130">
 					</picture>
 					<picture>
 						<source type="image/webp" :srcset="experience[activeIndex].logotype.webp" />
-						<source type="image/png" :srcset="experience[activeIndex].logotype.png" />
+						<!-- <source type="image/png" :srcset="experience[activeIndex].logotype.png" /> -->
 						<img class="logo__logotype" :src="experience[activeIndex].logotype.png" alt="logotype" width="250" height="50" />
 					</picture>
 				</a>

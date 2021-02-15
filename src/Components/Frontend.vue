@@ -52,7 +52,8 @@
 							img: search,
 							title: "Szczegóły",
 							content: `
-								Diabeł tkwi w szczegółach. Dlatego zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis, maskowalne ikony, oraz inne metatagi.
+								Diabeł tkwi w szczegółach.
+								Zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis, maskowalne ikony oraz inne metatagi.
 								Wszystko zgodnie ze sdandardem PWA (Progressive Web App).
 							`
 						},
@@ -62,7 +63,7 @@
 							content: `
 								Staram się jak najczęściej dzielić kod na komponenty.
 								Potrafię również posługiwać się silnikami szablonów, takimi jak Pug.js, EJS, czy Szablonami Django, co pozwala mi na tworzenie układów często występujących na stronie.
-								Umożliwia mi to zachowanie porządku, oraz szybkie wdrażanie ewentualnych poprawek.
+								Umożliwia mi to zachowanie porządku oraz szybkie wdrażanie ewentualnych poprawek.
 							`
 						},
 					],
@@ -75,7 +76,7 @@
 							img: rwd,
 							title: "Responsywność",
 							content: `
-								Wszystkie moje projekty są w pełni responsywne, tak aby urzytkownicy urządzeń mobilnych, czy nawet zegarków mogli cieszyć się dobrze przeststawionymi treściami.
+								Wszystkie moje projekty są w pełni responsywne, tak aby urżytkownicy urządzeń mobilnych, czy nawet zegarków mogli cieszyć się dobrze przedstawionymi treściami.
 								Unikam starego podejścia floatów i korzystam z nowych narzędzi takich jak flexbox, czy grid.
 							`,
 						},
@@ -92,7 +93,7 @@
 							title: "CSS in JS",
 							content: `
 								Jeśli natomiast pracuję we frameworku takim jak React, do stylowania najczęściej korzystam ze Styled Components.
-								Jestem zaznajomiony z takimi pojęciami jak rozszerzanie komponentów, props, czy theme provider
+								Jestem zaznajomiony z takimi pojęciami jak rozszerzanie komponentów, props, czy theme provider.
 							`
 						},
 						{
@@ -115,7 +116,7 @@
 							title: "Vue.js",
 							content: `
 								Z frameworkiem Vue mam styczność już ponad pół roku.
-								Odkąd poznałem ten framework, zakochałem się w nim.
+								Jak tylko poznałem ten framework, zakochałem się w nim.
 								Bardzo podoba mi się jego prostota i elastyczność.
 								Stworzyłem w nim już 4 większe projekty, o których więcej w sekcji "Realizacje".
 							`
@@ -125,7 +126,7 @@
 							title: "React.js",
 							content: `
 								React był pierwszym frameworkiem JavaScriptu, z którym miałem styczność.
-								Pozwolił mi na napisanie wielu ciekawych aplikacji, w tym platwormy EasyWord, którą rozwijałem około 1,5 roku (więcej o niej piszę w sekcji "Realizacje")
+								Pozwolił mi na napisanie wielu ciekawych aplikacji, w tym platformy EasyWord, którą rozwijałem około 1,5 roku (więcej w sekcji "Realizacje").
 							`
 						},
 						{
@@ -138,10 +139,10 @@
 						},
 						{
 							img: nojq,
-							title: "Nie dla JQuery",
+							title: "NIE dla JQuery",
 							content: `
-								Nie używam przestarzałych technologii, takich jak JQuery, co przekłada sie na szybkość moich stron.
-								Jednocześnie jestem powierzchownie zaznajomiony z tą biblioteką, dzięki czemu potrafię odnaleść się w starych projektach.
+								Nie używam przestarzałych technologii takich jak JQuery, co przekłada się na szybkość moich stron.
+								Jednocześnie jestem powierzchownie zaznajomiony z tą biblioteką, dzięki czemu potrafię odnaleźć się w starych projektach.
 							`
 						}
 					],

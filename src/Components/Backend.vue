@@ -44,9 +44,8 @@
 							img: ga,
 							title: "Google Analytics",
 							content: `
-								Firebase udostepnia Google Analytics.
-								Narzędzie, dzięki któremu właściciel strony jest w stanie monitorować akcje wykonywane na stronie.
-								W tym między innymi ilość odwiedzin.
+								Firebase udostępnia Google Analytics - narzędzie, dzięki któremu właściciel może monitorować akcje wykonywane na stronie.
+								Na przykład ilość i częstotliwość odwiedzin, czy lokalizacje odbiorców.
 							`
 						},
 						{
@@ -100,7 +99,7 @@
 							img: express,
 							title: "Express.js",
 							content: `
-								Potrafię korzystać z frameworka Express.js, oraz stworzyć w nim proste REST API.
+								Potrafię korzystać z frameworka Express.js oraz stworzyć w nim proste REST API.
 								Obecnie jestem na etapie tworzenia API do jednego z moich większych projektów nad którym pracuję (więcej o nim piszę w zakładce "Realizacje").
 							`,
 						},
@@ -131,7 +130,7 @@
 							img: terminal,
 							title: "Aplikacje konsolowe",
 							content: `
-								W pythonie potrafię tworzyć przeróżne aplikacje konsolowe, oraz korzystać z instalatora pakietów pip.
+								W pythonie potrafię tworzyć przeróżne aplikacje konsolowe oraz korzystać z instalatora pakietów pip.
 								W nauce tego języka pomogłem juz kilku moim znajomym, w tym siostrze na studiach.
 							`
 						},
@@ -140,7 +139,7 @@
 							title: "Django",
 							content: `
 								Umiem w podstawowym zakresie posługiwać się frameworkiem Django.
-								Potrafię stworzyć proste API, oraz posługiwać się Szablonami Django.
+								Potrafię stworzyć proste API oraz posługiwać się Szablonami Django.
 							`
 						},
 					],
