@@ -1,35 +1,39 @@
 <template>
 	<footer class="footer-wrapper">
 		<div class="contact">
-			<div class="contact-items">
-				<a class="contact__item" href="https://m.me/szulcus" aria-label="Messenger" v-rel>
-					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'facebook-messenger' }" />
-				</a>
-				<a class="contact__item" href="https://www.linkedin.com/in/szulcus/" aria-label="LinkedIn" v-rel>
-					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'linkedin' }" />
-				</a>
-				<a class="contact__item" href="https://github.com/jakub104" aria-label="GitHub" v-rel>
-					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'github' }" />
-				</a>
-				<a class="contact__item" href="https://www.npmjs.com/~szulcus" aria-label="NPM" v-rel>
-					<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'npm' }" />
-				</a>
-			</div>
-			<hr class="contact-separator" />
-			<div class="phone-number">
-				<a class="contact__item" href="tel:+48575744285" v-rel>
-					<fa-icon class="item__icon" icon="phone" />
-					57 57 44 285
-				</a>
-			</div>
-		</div>
-		<div :class="['info-wrapper', {'info-wrapper--active': infoActive}]">
-			Icons made by
-			<a class="flaticon-link" href="https://www.freepik.com" title="Freepik" v-rel>Freepik</a>,
-			<a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>,
-			<a class="flaticon-link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" v-rel>Pixel perfect</a> and
-			<a class="flaticon-link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs" v-rel>DinosoftLabs</a> from
-			<a class="flaticon-link" href="https://www.flaticon.com/" title="Flaticon" v-rel>www.flaticon.com</a>
+			<fragment v-if="!infoActive">
+				<div class="contact-items">
+					<a class="contact__item" href="https://m.me/szulcus" aria-label="Messenger" v-rel>
+						<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'facebook-messenger' }" />
+					</a>
+					<a class="contact__item" href="https://www.linkedin.com/in/szulcus/" aria-label="LinkedIn" v-rel>
+						<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'linkedin' }" />
+					</a>
+					<a class="contact__item" href="https://github.com/jakub104" aria-label="GitHub" v-rel>
+						<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'github' }" />
+					</a>
+					<a class="contact__item" href="https://www.npmjs.com/~szulcus" aria-label="NPM" v-rel>
+						<fa-icon class="item__icon" :icon="{ prefix: 'fab', iconName: 'npm' }" />
+					</a>
+				</div>
+				<hr class="contact-separator" />
+				<div class="phone-number">
+					<a class="contact__item" href="tel:+48575744285" v-rel>
+						<fa-icon class="item__icon" icon="phone" />
+						57 57 44 285
+					</a>
+				</div>
+			</fragment>
+			<fragment v-else>
+				<div class="info-wrapper">
+					Icons made by
+					<a class="flaticon-link" href="https://www.freepik.com" title="Freepik" v-rel>Freepik</a>,
+					<a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a>,
+					<a class="flaticon-link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" v-rel>Pixel perfect</a> and
+					<a class="flaticon-link" href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs" v-rel>DinosoftLabs</a> from
+					<a class="flaticon-link" href="https://www.flaticon.com/" title="Flaticon" v-rel>www.flaticon.com</a>
+				</div>
+			</fragment>
 		</div>
 		<div class="copyright">
 			<span class="wrapper__letter">S</span>zulcuś 2020 &copy;
@@ -64,11 +68,14 @@
 		font-size: 16px;
 		border-top: 3px solid $decorative;
 		.contact {
+			height: 80px;
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			margin: 10px 0;
 			flex-direction: column;
 			@media (min-width: 600px) {
+				height: 40px;
 				flex-direction: row;
 			}
 			.contact-items {
@@ -126,23 +133,18 @@
 					}
 				}
 			}
-		}
-		.info-wrapper {
-			display: none;
-			/* width: 100%; */
-			padding: 10px 0;
-			font-size: 16px;
-			animation: opacity 0.5s ease;
-			.flaticon-link {
-				color: $decorative;
-				transition: 0.2s ease;
-				@include hover {
-					opacity: 0.7;
+			.info-wrapper {
+				padding: 10px 0;
+				font-size: 16px;
+				animation: opacity 0.3s ease;
+				.flaticon-link {
+					color: $decorative;
+					@include hover {
+						transition: 0.2s ease;
+						opacity: 0.7;
+					}
 				}
 			}
-		}
-		.info-wrapper--active {
-			display: block;
 		}
 		.copyright {
 			font-size: 16px;
@@ -152,8 +154,9 @@
 				color: $decorative;
 			}
 			.info-icon {
+				font-size: 16px;
 				display: inline-block;
-				padding: 0 10px;
+				padding: 0 5px;
 				transition: 0.2s ease;
 				@include hover {
 					opacity: 0.7;
@@ -162,9 +165,6 @@
 			.info-icon--active {
 				transform: scale(1.2);
 				color: $decorative;
-				@include hover {
-					opacity: 1;
-				}
 			}
 		}
 	}
