@@ -61,7 +61,7 @@
 							title: "Struktura plików",
 							content: `
 								Ważny jest dla mnie porządek.
-								Odpowiednia struktóra folderów i plików przy większych projektach jest koniecznością, dlatego staram się od początku przykładać do tego uwagę.
+								Odpowiednia struktura folderów i plików przy większych projektach jest koniecznością, dlatego staram się od początku przykładać do tego uwagę.
 							`
 						}
 					],

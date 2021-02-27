@@ -76,7 +76,7 @@
 							img: rwd,
 							title: "Responsywność",
 							content: `
-								Wszystkie moje projekty są w pełni responsywne, tak aby urżytkownicy urządzeń mobilnych, czy nawet zegarków mogli cieszyć się dobrze przedstawionymi treściami.
+								Wszystkie moje projekty są w pełni responsywne, tak aby użytkownicy urządzeń mobilnych, czy nawet zegarków mogli cieszyć się dobrze przedstawionymi treściami.
 								Unikam starego podejścia floatów i korzystam z nowych narzędzi takich jak flexbox, czy grid.
 							`,
 						},
