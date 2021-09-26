@@ -72,8 +72,8 @@
 							png: tofu_logotype_png,
 							webp: tofu_logotype_webp
 						},
-						url: "https://jakub104.github.io/tofu",
-						git: "https://github.com/jakub104/tofu",
+						url: "https://szulcus.github.io/tofu",
+						git: "https://github.com/szulcus/tofu",
 						technologies: [
 							{
 								img: vue,
@@ -109,7 +109,7 @@
 						},
 						title: "Na-J",
 						url: "https://na-j.pl",
-						git: "https://github.com/jakub104/naj",
+						git: "https://github.com/szulcus/naj",
 						technologies: [
 							{
 								img: vue,
@@ -144,7 +144,7 @@
 						},
 						title: "EasyWord",
 						url: "https://easyword123.pl",
-						git: "https://github.com/jakub104/easy-word",
+						git: "https://github.com/szulcus/easy-word",
 						technologies: [
 							{
 								img: react,
@@ -179,7 +179,7 @@
 							webp: cichy_dworek_logotype_webp
 						},
 						url: "https://cichy-dworek.pl",
-						git: "https://github.com/jakub104/cichy-dworek",
+						git: "https://github.com/szulcus/cichy-dworek",
 						technologies: [
 							{
 								img: vue,
@@ -214,7 +214,7 @@
 						},
 						title: "MyNotes",
 						url: "https://mynotes-szulcus.netlify.app",
-						git: "https://github.com/jakub104/my-notes",
+						git: "https://github.com/szulcus/my-notes",
 						technologies: [
 							{
 								img: vue,
@@ -250,7 +250,7 @@
 							webp: root_calculate_logotype_webp
 						},
 						url: "https://www.npmjs.com/package/root-calculate",
-						git: "https://github.com/jakub104/root-calculate",
+						git: "https://github.com/szulcus/root-calculate",
 						technologies: [
 							{
 								img: nodejs,
@@ -280,7 +280,7 @@
 							webp: s_community_logotype_webp
 						},
 						url: "https://scommunity.eu",
-						git: "https://github.com/jakub104/scommunity",
+						git: "https://github.com/szulcus/scommunity",
 						technologies: [
 							{
 								img: vue,

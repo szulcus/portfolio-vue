@@ -1,12 +1,12 @@
 <template>
-	<div class="gallery">
+	<div class="gallery-wrapper">
 		<div class="arrow" @click="itemsDown">
 			<fa-icon class="arrow__icon" icon="angle-left" />
 		</div>
 		<div class="arrow" @click="itemsUp">
 			<fa-icon class="arrow__icon" icon="angle-right" />
 		</div>
-		<div class="gallery-wrapper">
+		<div class="gallery">
 			<div :class="['exp', {'exp--hide': exchange}]">
 				<h2 v-html="experience[activeItems][0].title" class="exp__title" />
 				<img class="exp__img" :src="experience[activeItems][0].img" :alt="experience[activeItems][0].title" width="200" height="100">
@@ -115,7 +115,7 @@
 </script>
 
 <style lang="scss" scoped>
-.gallery {
+.gallery-wrapper {
 	position: relative;
 	width: 90%;
 	max-width: 1000px;
@@ -151,7 +151,7 @@
 			}
 		}
 	}
-	.gallery-wrapper {
+	.gallery {
 		width: 100%;
 		height: 100%;
 		clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);

@@ -1,7 +1,10 @@
 <template>
-	<a class="link-component" :href="to" v-rel>
+	<a v-if="!router" class="link-component" :href="to" v-rel>
 		{{content}}
 	</a>
+	<router-link v-else :to="to" class="link-component">
+		{{content}}
+	</router-link>
 </template>
 
 <script>
@@ -9,13 +12,15 @@
 		name: "Link",
 		props: {
 			content: String,
-			to: String
+			to: String,
+			router: Boolean
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 	.link-component {
+		min-height: 41px;
 		display: block;
 		position: relative;
 		font-size: 18px;

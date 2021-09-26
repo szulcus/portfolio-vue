@@ -1,5 +1,6 @@
 import Vue from 'vue'
 // import VueAnalytics from 'vue-analytics'
+import router from '@/Router'
 import App from '@/App.vue'
 import '@/registerServiceWorker'
 // STYLES
@@ -11,6 +12,11 @@ import './registerServiceWorker'
 
 const vh = window.innerHeight;
 document.documentElement.style.setProperty('--window-height', `${vh}px`);
+
+window.addEventListener('resize', () => {
+	const vh = window.innerHeight;
+	document.documentElement.style.setProperty('--window-height', `${vh}px`);
+})
 
 // Vue.use(VueAnalytics, {
 // 	id: 'G-H5XJGJB4P9'
@@ -42,5 +48,6 @@ Vue.prototype.$importAll = (r) => {
 Vue.config.productionTip = false
 
 new Vue({
+	router,
 	render: h => h(App)
 }).$mount('#app')

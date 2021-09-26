@@ -8,9 +8,12 @@
 	::before {
 		box-sizing: border-box;
 	}
+	scrollbar-width: thin;
+	scrollbar-color: $decorative transparent;
 }
 ::-webkit-scrollbar {
 	width: 5px;
+	height: 0;
 }
 ::-webkit-scrollbar-track {
 	background: transparent; 
@@ -32,7 +35,7 @@ body {
 	@media (min-width: 600px) {
 		background-image: url("../Assets/overlay.svg");
 		background-repeat: repeat-y;
-		background-size: 100%;
+		background-size: max(100vw, 360px);
 	}
 	ul {
 		margin: 0;

@@ -51,7 +51,7 @@
 							img: vsc,
 							title: "VS Code",
 							content: `
-								Dużą wagę przykładam do wyglądu i konfiguracji mojego stanowiska pracy, którym na codzień jest Visual Studio Code.
+								Dużą wagę przykładam do wyglądu i konfiguracji mojego stanowiska pracy, którym na co dzień jest Visual Studio Code.
 								Staram się, aby moja praca była wydajna, dlatego korzystam z wielu paczek i skrótów.
 								Potrafię również samemu tworzyć własne snippety, czy skróty klawiszowe.
 							`
@@ -152,7 +152,7 @@
 							img: vba,
 							title: "VBA",
 							content: `
-								W drugiej licueum wraz z obsługą Excela, uczyłem się o języka Visual Basic for Applications.
+								W drugiej liceum wraz z obsługą Excela, uczyłem się o języka Visual Basic for Applications.
 								Nauczyłem się w nim tworzyć proste funkcje i makra.
 							`
 						},

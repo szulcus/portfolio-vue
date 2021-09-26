@@ -53,7 +53,7 @@
 							title: "Szczegóły",
 							content: `
 								Diabeł tkwi w szczegółach.
-								Zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachecający opis, maskowalne ikony oraz inne metatagi.
+								Zawsze zwracam uwagę na faviconkę, grafikę reprezentującą link, zachęcający opis, maskowalne ikony oraz inne metatagi.
 								Wszystko zgodnie ze sdandardem PWA (Progressive Web App).
 							`
 						},

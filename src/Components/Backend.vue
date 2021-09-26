@@ -76,7 +76,7 @@
 							img: fh,
 							title: "Firebase Hosting",
 							content: `
-								Firebase (choć nie tylko, o czym piszę w sekcji "Inne") udostepnia darmowy Hosting, wraz z cutomową domeną.
+								Firebase (choć nie tylko, o czym piszę w sekcji "Inne") udostepnia darmowy Hosting, wraz z customową domeną.
 								Dzięki temu dla prostych stron jestem w stanie ograniczyć coroczne opłaty jedynie do domeny.
 							`
 						},

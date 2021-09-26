@@ -46,12 +46,12 @@
 			@include line;
 		}
 		.subtitle {
-			font-size: 23px;
-			margin: 30px 0 10px 0;
+			font-size: 20px;
+			margin: 20px 0 10px 0;
 			text-align: center;
 		}
 		.description {
-			font-size: 20px;
+			font-size: 18px;
 			width: 100%;
 			text-align: center;
 			max-width: 1000px;
