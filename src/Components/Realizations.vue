@@ -109,7 +109,7 @@
 						},
 						title: "Na-J",
 						url: "https://na-j.pl",
-						git: "https://github.com/szulcus/naj",
+						git: "https://github.com/szulcus/na-j",
 						technologies: [
 							{
 								img: vue,
@@ -144,7 +144,7 @@
 						},
 						title: "EasyWord",
 						url: "https://easyword123.pl",
-						git: "https://github.com/szulcus/easy-word",
+						git: "https://github.com/szulcus/easyword",
 						technologies: [
 							{
 								img: react,
